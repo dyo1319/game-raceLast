@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../gamepics/BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.postion-texts{
+    position: absolute;
+    top: 470px;
+    left: 150px;
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+.game-name {
+    background-color: rgba(255, 0, 191, 0.36);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: 2px 2px 5px red;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.play-button,
+.reset-button {
+    background-color: rgba(255, 0, 191, 0.36);
+    color: #fff;
+    margin: 8px 0;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    text-shadow: 2px 2px 5px red;
+}
+
+audio {
+    width: 100%;
+    max-width: 300px; /* Adjust the width as needed */
+    margin: 10px 0;
+  }
+  
+  /* Style the audio controls */
+  audio::-webkit-media-controls {
+    border-radius: 10px;
+  }
+  
+  /* Style the play/pause button */
+  audio::-webkit-media-controls-play-button {
+    background-color: #f528c8;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Style the volume slider */
+  audio::-webkit-media-controls-volume-slider {
+    width: 100px;
+  }
